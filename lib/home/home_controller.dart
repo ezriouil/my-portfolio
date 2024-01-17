@@ -16,16 +16,17 @@ class HomeController extends GetxController {
 
   // - - - - - - - - - - - - - - - - - - PROJECTS - - - - - - - - - - - - - - - - - -  //
   List<Project> projects = [
-    Project(image: "assets/images/projects/ecommerce_app.png", title: "Verus App", description: "Ecommerce App For Shopping Online", link: ""),
-    Project(image: "assets/images/projects/delivery_food.png", title: "Panda Food", description: "Food App For Order Foods Online", link: ""),
-    Project(image: "assets/images/projects/movies.png", title: "Panda Food", description: "Food App For Order Foods Online", link: ""),
-    Project(image: "assets/images/projects/sport.png", title: "Panda Food", description: "Food App For Order Foods Online", link: ""),
-    Project(image: "assets/images/projects/management.png", title: "Panda Food", description: "Food App For Order Foods Online", link: ""),
-    Project(image: "assets/images/projects/games.png", title: "Panda Food", description: "Food App For Order Foods Online", link: ""),
-    Project(image: "assets/images/projects/agency.jpg", title: "Panda Food", description: "Food App For Order Foods Online", link: ""),
-    Project(image: "assets/images/projects/books.jpg", title: "Panda Food", description: "Food App For Order Foods Online", link: ""),
-    Project(image: "assets/images/projects/portfolio.jpg", title: "Panda Food", description: "Food App For Order Foods Online", link: ""),
-    Project(image: "assets/images/projects/login.png", title: "Panda Food", description: "Food App For Order Foods Online", link: ""),
+    Project(image: "assets/images/projects/ecommerce_app.png", title: "Vyras App", description: "Ecommerce Application For Shopping Clothes Online.", link: ""),
+    Project(image: "assets/images/projects/delivery_food.png", title: "Panda Food", description: "Food Application For Order All Food Types Online", link: ""),
+    Project(image: "assets/images/projects/movies.png", title: "Tv Maze", description: "Movies / series Application to know information like characters, trailer, etc", link: ""),
+    Project(image: "assets/images/projects/sport.png", title: "Hk Club", description: "Fitness Application Automatically Manage Customer Payment.", link: ""),
+    Project(image: "assets/images/projects/free_to_play.png", title: "Free To Play", description: "Games Application to know information With Link Download It, etc", link: ""),
+    Project(image: "assets/images/projects/management.png", title: "Management", description: "Management Application For Manage Stocks Like The dates of each payment, the number of products sold.", link: ""),
+    Project(image: "assets/images/projects/games.png", title: "Ezil Games", description: "Games Application For Playing Video Games", link: ""),
+    Project(image: "assets/images/projects/agency.jpg", title: "Ezil Agency", description: "Agency Web Site For Sold Services", link: ""),
+    Project(image: "assets/images/projects/books.jpg", title: "Books Hub", description: "Web Site Display Books", link: ""),
+    Project(image: "assets/images/projects/portfolio.jpg", title: "Dev Portfolio", description: "Web Site Display Skills", link: ""),
+    Project(image: "assets/images/projects/login.png", title: "SignUp / Login Pages", description: "Web Site For Sign Up And Login", link: ""),
   ];
 
   // - - - - - - - - - - - - - - - - - - DISPOSE STATES - - - - - - - - - - - - - - - - - -  //

@@ -40,7 +40,7 @@ class CustomServiceItem extends Responsive {
                     decoration: BoxDecoration(
                         color: grayColor(context).withOpacity(0.7),
                         borderRadius: BorderRadius.circular(
-                            CustomSizes.SPACE_BETWEEN_SECTIONS *
+                            CustomSizes.WEB_SPACE_BETWEEN_SECTIONS *
                                 4)),
                     padding: const EdgeInsets.symmetric(vertical: CustomSizes.SPACE_BETWEEN_ITEMS / 2, horizontal: CustomSizes.SPACE_BETWEEN_ITEMS),
                     child: Text(header,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/utils/constants/custom_colors.dart';
 import 'package:portfolio/utils/responsive/responsive.dart';
+import 'package:portfolio/utils/constants/custom_sizes.dart';
 
 class CustomIconWithButton extends Responsive {
   final String? text, image;
@@ -21,20 +22,22 @@ class CustomIconWithButton extends Responsive {
     return Container(
       decoration: BoxDecoration(
           color: backgroundColor,
-          borderRadius: BorderRadius.circular(spaceBetweenItems(context) / 2)),
-      padding: EdgeInsets.symmetric(horizontal: spaceBetweenItems(context) / 2),
+          borderRadius: BorderRadius.circular(CustomSizes.WEB_SPACE_BETWEEN_ITEMS)),
+
+      padding: EdgeInsets.symmetric(horizontal: CustomSizes.WEB_SPACE_BETWEEN_ITEMS/2, vertical: CustomSizes.WEB_SPACE_BETWEEN_ITEMS/4),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           icon == null
               ? Image.asset(image!, width: 20, height: 20)
               : Icon(icon, size: 20, color: iconColor),
-          SizedBox(width: spaceBetweenItems(context) / 4),
+          SizedBox(width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS/2),
           ElevatedButton(
               onPressed:onClick,
               style: ElevatedButton.styleFrom(
                   backgroundColor: CustomColors.TRANSPARENT,
                   elevation: 0,
+                  shadowColor: CustomColors.TRANSPARENT,
                   side: BorderSide.none,
                   padding: const EdgeInsets.symmetric(vertical: 12.0)),
               child: Text(text!,

@@ -49,11 +49,14 @@ abstract class Responsive extends StatelessWidget {
   double spaceBetweenItems(BuildContext context) =>
       context.width < 650 ? 16.0 : context.width >= 650 && context.width < 1100 ? 24.0 : 32.0;
 
+  double iconSize(BuildContext context) =>
+      context.width < 650 ? 20.0 : context.width >= 650 && context.width < 1100 ? 30.0 : 70.0;
+
 
   double spaceDefault(BuildContext context) =>
-      context.width < 650 ? 24.0 : context.width >= 650 && context.width < 1100 ? 48.0 : 72.0;
+      context.width < 650 ? 24.0 : context.width >= 650 && context.width < 1100 ? 32.0 : 40.0;
 
   double spaceBetweenSections(BuildContext context) =>
-      context.width < 650 ? 32.0 : context.width >= 650 && context.width < 1100 ? 64.0 : 96.0;
+      context.width < 650 ? 32.0 : context.width >= 650 && context.width < 1100 ? 40.0 : 48.0;
 
 }

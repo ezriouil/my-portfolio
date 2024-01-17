@@ -46,7 +46,7 @@ class CustomAnimationScreen extends Responsive {
           if (text != null)
             Text(text!, style: Theme.of(context).textTheme.titleLarge),
           if (description != null)
-            const SizedBox(height: CustomSizes.SPACE_BETWEEN_SECTIONS),
+            const SizedBox(height: CustomSizes.WEB_SPACE_BETWEEN_SECTIONS),
           if (description != null)
             Text(
               description!,
@@ -54,7 +54,7 @@ class CustomAnimationScreen extends Responsive {
               textAlign: TextAlign.center,
             ),
           if (actionText != null)
-            const SizedBox(height: CustomSizes.SPACE_BETWEEN_SECTIONS),
+            const SizedBox(height: CustomSizes.WEB_SPACE_BETWEEN_SECTIONS),
           if (actionText != null)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
