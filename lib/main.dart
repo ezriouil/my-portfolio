@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/home/home_screen.dart';
 import 'package:portfolio/utils/responsive/responsive.dart';
 import 'package:portfolio/utils/theme/theme_app.dart';
+import 'package:portfolio/utils/responsive/responsive_layout.dart';
+import 'package:portfolio/home/mobile_and_tablet_home_screen.dart';
+import 'package:portfolio/home/web_home_screen.dart';
 
 void main() {
   runApp(const Portfolio());
@@ -15,9 +17,12 @@ class Portfolio extends Responsive {
   Widget execute(BuildContext context) {
     return GetMaterialApp(
         themeMode: ThemeMode.light,
-        theme: ThemeApp.lightTheme(context),
-        darkTheme: ThemeApp.darkTheme(context),
+        theme: ThemeApp.lightTheme,
+        darkTheme: ThemeApp.darkTheme,
         debugShowCheckedModeBanner: false,
-        home: const HomeScreen());
+        home: ResponsiveLayout(
+          web: WebHomeScreen(),
+          mobile: MobileAndTabletHomeScreen(),
+        ));
   }
 }

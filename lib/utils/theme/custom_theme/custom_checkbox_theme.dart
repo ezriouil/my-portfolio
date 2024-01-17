@@ -16,7 +16,7 @@ class CustomCheckboxTheme {
       }),
       fillColor: MaterialStateProperty.resolveWith((states) {
         if (states.contains(MaterialState.selected)) {
-          return CustomColors.PRIMARY;
+          return CustomColors.PRIMARY_1;
         } else {
           return CustomColors.TRANSPARENT;
         }
@@ -34,7 +34,7 @@ class CustomCheckboxTheme {
       }),
       fillColor: MaterialStateProperty.resolveWith((states) {
         if (states.contains(MaterialState.selected)) {
-          return CustomColors.PRIMARY;
+          return CustomColors.PRIMARY_1;
         } else {
           return CustomColors.TRANSPARENT;
         }

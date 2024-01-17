@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeController extends GetxController {
 
@@ -13,6 +14,20 @@ class HomeController extends GetxController {
 
   // - - - - - - - - - - - - - - - - - - INIT - - - - - - - - - - - - - - - - - -  //
   init() async {}
+
+  // - - - - - - - - - - - - - - - - - - BUTTONS - - - - - - - - - - - - - - - - - -  //
+  onHireMeClick(){}
+  onHomeClick(){}
+  onAboutClick(){}
+  onProjectsClick(){}
+  onTwitterClick(){}
+  onGithubClick(){}
+  onLinkedinClick(){}
+  onInstagramClick(){}
+  onWhatsappClick(){
+    launchUrl(Uri.parse("tel://212624778355"));
+  }
+  onSubmitClick(){}
 
   // - - - - - - - - - - - - - - - - - - PROJECTS - - - - - - - - - - - - - - - - - -  //
   List<Project> projects = [

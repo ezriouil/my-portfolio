@@ -11,28 +11,28 @@ class ThemeApp{
   ThemeApp._();
 
   /// Light Theme
-  static ThemeData lightTheme(BuildContext context) => ThemeData(
+  static ThemeData lightTheme = ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
       scaffoldBackgroundColor: CustomColors.WHITE,
       primaryColor: CustomColors.PRIMARY,
-      elevatedButtonTheme: CustomElevatedButtonTheme.lightElevatedButtonTheme(context),
-      outlinedButtonTheme: CustomOutlinedButtonTheme.lightOutlinedButtonTheme(context),
-      appBarTheme: CustomAppBarTheme.lightAppBarTheme(context),
-      inputDecorationTheme: CustomInputTheme.lightInputTheme(context),
-      textTheme: CustomTextTheme.lightTextTheme(context),
+      elevatedButtonTheme: CustomElevatedButtonTheme.lightElevatedButtonTheme,
+      outlinedButtonTheme: CustomOutlinedButtonTheme.lightOutlinedButtonTheme,
+      appBarTheme: CustomAppBarTheme.lightAppBarTheme,
+      inputDecorationTheme: CustomInputTheme.lightInputTheme,
+      textTheme: CustomTextTheme.lightTextTheme,
       checkboxTheme: CustomCheckboxTheme.lightCheckboxTheme);
 
   /// Dark Theme
-  static ThemeData darkTheme(BuildContext context) => ThemeData(
+  static ThemeData darkTheme = ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
       scaffoldBackgroundColor: CustomColors.BLACK,
       primaryColor: CustomColors.PRIMARY,
-      elevatedButtonTheme: CustomElevatedButtonTheme.darkElevatedButtonTheme(context),
-      outlinedButtonTheme: CustomOutlinedButtonTheme.darkOutlinedButtonTheme(context),
-      appBarTheme: CustomAppBarTheme.darkAppBarTheme(context),
-      inputDecorationTheme: CustomInputTheme.darkInputTheme(context),
-      textTheme: CustomTextTheme.darkTextTheme(context),
+      elevatedButtonTheme: CustomElevatedButtonTheme.darkElevatedButtonTheme,
+      outlinedButtonTheme: CustomOutlinedButtonTheme.darkOutlinedButtonTheme,
+      appBarTheme: CustomAppBarTheme.darkAppBarTheme,
+      inputDecorationTheme: CustomInputTheme.darkInputTheme,
+      textTheme: CustomTextTheme.darkTextTheme,
       checkboxTheme: CustomCheckboxTheme.darkCheckboxTheme);
 }
