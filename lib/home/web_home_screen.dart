@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:portfolio/common/widgets/custom_icon_with_btn.dart';
 import 'package:portfolio/home/home_controller.dart';
 import 'package:portfolio/utils/constants/custom_colors.dart';
@@ -14,9 +14,10 @@ class WebHomeScreen extends Responsive {
 
   @override
   Widget execute(BuildContext context) {
-    final HomeController controller = Get.put(HomeController());
+    final HomeController controller = HomeController();
     return Scaffold(
       body: SingleChildScrollView(
+        controller: controller.scrollController,
         child: Column(children: [
 
           /*__________ TAP BAR _________*/
@@ -38,14 +39,14 @@ class WebHomeScreen extends Responsive {
                     ),
                     SizedBox(width: CustomSizes.WEB_SPACE_BETWEEN_SECTIONS),
                     InkWell(
-                      onTap: controller.onSubmitClick,
-                      child: Text("Skills",
+                      onTap: controller.onProjectsClick,
+                      child: Text("Projects",
                           style: Theme.of(context).textTheme.titleLarge),
                     ),
                     SizedBox(width: CustomSizes.WEB_SPACE_BETWEEN_SECTIONS),
                     InkWell(
-                      onTap: controller.onProjectsClick,
-                      child: Text("Projects",
+                      onTap: controller.onContactClick,
+                      child: Text("Contact",
                           style: Theme.of(context).textTheme.titleLarge),
                     ),
                   ],
@@ -152,7 +153,7 @@ class WebHomeScreen extends Responsive {
                         ClipRRect(
                             borderRadius: BorderRadius.circular(12),
                             child: Image.asset(
-                              "assets/images/med.jpg",
+                              "assets/images/med.webp",
                               fit: BoxFit.cover,
                               height: 450,
                               width: 350,
@@ -457,7 +458,7 @@ class WebHomeScreen extends Responsive {
                                       backgroundColor: CustomColors.PRIMARY_1,
                                       textColor: CustomColors.WHITE,
                                       onTap: () {
-                                        print(controller.projects[index].link);
+                                        launchUrl(Uri.parse(controller.projects[index].link));
                                       },
                                       iconColor: CustomColors.WHITE)
                                 ],
@@ -585,7 +586,7 @@ class WebHomeScreen extends Responsive {
                           color: CustomColors.WHITE)),
                   SizedBox(width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS / 2),
                   InkWell(
-                      onTap: () {},
+                      onTap: controller.onGithubClick,
                       child: Image.asset("assets/icons/social_media/github.png",
                           height: 40, width: 40, color: CustomColors.WHITE)),
                   SizedBox(width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS / 2),

@@ -33,32 +33,32 @@ class CustomInputTheme {
   );
 
   /// Text Field For Dark Theme
-  static InputDecorationTheme darkInputTheme = InputDecorationTheme(
-    errorMaxLines: 3,
-    prefixIconColor: CustomColors.GREY_LIGHT,
-    suffixIconColor: CustomColors.GREY_LIGHT,
-    labelStyle:
-        const TextStyle().copyWith(fontSize: 14.0, color: CustomColors.WHITE),
-    hintStyle:
-        const TextStyle().copyWith(fontSize: 14.0, color: CustomColors.GREY_DARK),
-    errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle:
-        const TextStyle().copyWith(color: CustomColors.BLACK.withOpacity(0.8)),
-    border: const OutlineInputBorder().copyWith(
-        borderRadius: BorderRadius.circular(14.0),
-        borderSide: const BorderSide(color: CustomColors.GREY_DARK)),
-    enabledBorder: const OutlineInputBorder().copyWith(
-        borderRadius: BorderRadius.circular(14.0),
-        borderSide: const BorderSide(color: CustomColors.GREY_DARK)),
-    focusedBorder: const OutlineInputBorder().copyWith(
-        borderRadius: BorderRadius.circular(14.0),
-        borderSide: const BorderSide(color: CustomColors.WHITE)),
-    errorBorder: const OutlineInputBorder().copyWith(
-        borderRadius: BorderRadius.circular(14.0),
-        borderSide: const BorderSide(color: CustomColors.PRIMARY_1)),
-    focusedErrorBorder: const OutlineInputBorder().copyWith(
-        borderRadius: BorderRadius.circular(14.0),
-        borderSide:
-            BorderSide(color: CustomColors.GREY_LIGHT.withOpacity(0.5))),
-  );
+  // static InputDecorationTheme darkInputTheme = InputDecorationTheme(
+  //   errorMaxLines: 3,
+  //   prefixIconColor: CustomColors.GREY_LIGHT,
+  //   suffixIconColor: CustomColors.GREY_LIGHT,
+  //   labelStyle:
+  //       const TextStyle().copyWith(fontSize: 14.0, color: CustomColors.WHITE),
+  //   hintStyle:
+  //       const TextStyle().copyWith(fontSize: 14.0, color: CustomColors.GREY_DARK),
+  //   errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
+  //   floatingLabelStyle:
+  //       const TextStyle().copyWith(color: CustomColors.BLACK.withOpacity(0.8)),
+  //   border: const OutlineInputBorder().copyWith(
+  //       borderRadius: BorderRadius.circular(14.0),
+  //       borderSide: const BorderSide(color: CustomColors.GREY_DARK)),
+  //   enabledBorder: const OutlineInputBorder().copyWith(
+  //       borderRadius: BorderRadius.circular(14.0),
+  //       borderSide: const BorderSide(color: CustomColors.GREY_DARK)),
+  //   focusedBorder: const OutlineInputBorder().copyWith(
+  //       borderRadius: BorderRadius.circular(14.0),
+  //       borderSide: const BorderSide(color: CustomColors.WHITE)),
+  //   errorBorder: const OutlineInputBorder().copyWith(
+  //       borderRadius: BorderRadius.circular(14.0),
+  //       borderSide: const BorderSide(color: CustomColors.PRIMARY_1)),
+  //   focusedErrorBorder: const OutlineInputBorder().copyWith(
+  //       borderRadius: BorderRadius.circular(14.0),
+  //       borderSide:
+  //           BorderSide(color: CustomColors.GREY_LIGHT.withOpacity(0.5))),
+  // );
 }

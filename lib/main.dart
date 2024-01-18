@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:portfolio/utils/responsive/responsive.dart';
 import 'package:portfolio/utils/theme/theme_app.dart';
 import 'package:portfolio/utils/responsive/responsive_layout.dart';
@@ -15,10 +14,10 @@ class Portfolio extends Responsive {
 
   @override
   Widget execute(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
         themeMode: ThemeMode.light,
         theme: ThemeApp.lightTheme,
-        darkTheme: ThemeApp.darkTheme,
+        darkTheme: ThemeApp.lightTheme,
         debugShowCheckedModeBanner: false,
         home: ResponsiveLayout(
           web: WebHomeScreen(),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:portfolio/common/widgets/custom_icon_with_btn.dart';
 import 'package:portfolio/utils/constants/custom_colors.dart';
 import 'package:portfolio/utils/constants/custom_sizes.dart';
 import 'package:portfolio/utils/responsive/responsive.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:portfolio/home/home_controller.dart';
 import 'package:widget_and_text_animator/widget_and_text_animator.dart';
 
@@ -14,7 +14,7 @@ class MobileAndTabletHomeScreen extends Responsive {
 
   @override
   Widget execute(BuildContext context) {
-    final HomeController controller = Get.put(HomeController());
+    final HomeController controller = HomeController();
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(children: [
@@ -47,7 +47,7 @@ class MobileAndTabletHomeScreen extends Responsive {
             color: CustomColors.PRIMARY_1,
             padding: EdgeInsets.only(
                 left: CustomSizes.MOBILE_TABLET_SPACE_BETWEEN_SECTIONS,
-                top: CustomSizes.MOBILE_TABLET_SPACE_BETWEEN_ITEMS),
+                top: CustomSizes.MOBILE_TABLET_SPACE_BETWEEN_SECTIONS),
             child:
                 Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -68,7 +68,7 @@ class MobileAndTabletHomeScreen extends Responsive {
                             style: Theme.of(context)
                                 .textTheme
                                 .headlineMedium
-                                ?.copyWith(fontSize: 30, letterSpacing: 4)),
+                                ?.copyWith(fontSize: 20, letterSpacing: 4)),
                         SizedBox(height: CustomSizes.MOBILE_TABLET_SPACE_BETWEEN_ITEMS),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -118,14 +118,13 @@ class MobileAndTabletHomeScreen extends Responsive {
                           alignment: AlignmentDirectional.topStart,
                           children: [
                                  Image.asset("assets/images/lightning.png",
-                                    height: 600, fit: BoxFit.cover),
+                                    height: 400, fit: BoxFit.cover),
                             ClipRRect(
                                 borderRadius: BorderRadius.circular(12),
-                                child: Image.asset(
-                                  "assets/images/med.jpg",
+                                child: Image.asset("assets/images/med.webp",
                                   fit: BoxFit.cover,
-                                  height: 450,
-                                  width: 400,
+                                  height: 250,
+                                  width: 200,
                                   alignment: Alignment.topCenter,
                                 ))
                           ],
@@ -156,14 +155,16 @@ class MobileAndTabletHomeScreen extends Responsive {
                                 fontSize:
                                     CustomSizes.MOBILE_TABLET_SPACE_BETWEEN_SECTIONS)),
                     Text("YEARS OF\nEXPERIENCE    ",
+                        maxLines: 2, overflow: TextOverflow.ellipsis,
                         style: Theme.of(context)
                             .textTheme
                             .headlineSmall
                             ?.copyWith(
                                 letterSpacing: 2,
-                                fontSize: CustomSizes.MOBILE_TABLET_SPACE_DEFAULT,
+                                fontSize: CustomSizes.MOBILE_TABLET_SPACE_BETWEEN_ITEMS,
                                 color: CustomColors.PRIMARY_3)),
                     Text("12  ",
+                        maxLines: 2, overflow: TextOverflow.ellipsis,
                         style: Theme.of(context)
                             .textTheme
                             .headlineLarge
@@ -176,7 +177,7 @@ class MobileAndTabletHomeScreen extends Responsive {
                             .headlineSmall
                             ?.copyWith(
                             letterSpacing: 2,
-                            fontSize: CustomSizes.MOBILE_TABLET_SPACE_DEFAULT,
+                            fontSize: CustomSizes.MOBILE_TABLET_SPACE_BETWEEN_ITEMS,
                             color: CustomColors.PRIMARY_3))
                   ],
                 ),
@@ -236,7 +237,7 @@ class MobileAndTabletHomeScreen extends Responsive {
                       atRestEffect:
                           WidgetRestingEffects.pulse(curve: Curves.easeInBack),
                       child: Image.asset("assets/images/lightning.png",
-                          height: 450),
+                          height: 500),
                     ),
                     Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -282,37 +283,16 @@ class MobileAndTabletHomeScreen extends Responsive {
                               SizedBox(
                                   width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
                               Image.asset(
-                                  "assets/icons/languages/swift_icon.png",
-                                  color: CustomColors.PRIMARY_2,
-                                  width: 60,
-                                  height: 60),
-                              SizedBox(
-                                  width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
-                              Image.asset(
                                   "assets/icons/languages/android_studio_icon.png",
                                   color: CustomColors.PRIMARY_2,
                                   width: 60,
-                                  height: 60),
-                              SizedBox(
-                                  width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
-                              Image.asset(
-                                  "assets/icons/languages/vs_code_icon.png",
-                                  color: CustomColors.PRIMARY_2,
-                                  width: 60,
-                                  height: 60),
+                                  height: 60)
                             ],
                           ),
                           SizedBox(height: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Image.asset(
-                                  "assets/icons/languages/firebase_icon.png",
-                                  color: CustomColors.PRIMARY_2,
-                                  width: 60,
-                                  height: 60),
-                              SizedBox(
-                                  width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
                               Image.asset(
                                   "assets/icons/languages/python_icon.png",
                                   color: CustomColors.PRIMARY_2,
@@ -334,14 +314,39 @@ class MobileAndTabletHomeScreen extends Responsive {
                               SizedBox(
                                   width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
                               Image.asset(
-                                  "assets/icons/languages/figma_icon.png",
+                                  "assets/icons/languages/javascript_icon.png",
+                                  color: CustomColors.PRIMARY_2,
+                                  width: 60,
+                                  height: 60)
+                            ],
+                          ),
+                          SizedBox(height: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                            Image.asset(
+                                "assets/icons/languages/vs_code_icon.png",
+                                color: CustomColors.PRIMARY_2,
+                                width: 60,
+                                height: 60),
+                              SizedBox(
+                                  width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
+                              Image.asset(
+                                  "assets/icons/languages/firebase_icon.png",
                                   color: CustomColors.PRIMARY_2,
                                   width: 60,
                                   height: 60),
                               SizedBox(
                                   width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
                               Image.asset(
-                                  "assets/icons/languages/xcode_icon.png",
+                                  "assets/icons/languages/database_icon.png",
+                                  color: CustomColors.PRIMARY_2,
+                                  width: 60,
+                                  height: 60),
+                              SizedBox(
+                                  width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS),
+                              Image.asset(
+                                  "assets/icons/languages/figma_icon.png",
                                   color: CustomColors.PRIMARY_2,
                                   width: 60,
                                   height: 60),
@@ -428,7 +433,7 @@ class MobileAndTabletHomeScreen extends Responsive {
                                       backgroundColor: CustomColors.PRIMARY_1,
                                       textColor: CustomColors.WHITE,
                                       onTap: () {
-                                        print(controller.projects[index].link);
+                                        launchUrl(Uri.parse(controller.projects[index].link));
                                       },
                                       iconColor: CustomColors.WHITE)
                                 ],
@@ -439,7 +444,7 @@ class MobileAndTabletHomeScreen extends Responsive {
                 /*__________ CONTACT ME _________*/
                 Padding(
                   padding: EdgeInsets.symmetric(
-                      horizontal: getWidth(context) / 10,
+                      horizontal: getWidth(context) / 6,
                       vertical: CustomSizes.WEB_SPACE_BETWEEN_SECTIONS),
                   child: Column(
                     children: [
@@ -556,7 +561,7 @@ class MobileAndTabletHomeScreen extends Responsive {
                           color: CustomColors.WHITE)),
                   SizedBox(width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS / 2),
                   InkWell(
-                      onTap: () {},
+                      onTap: controller.onGithubClick,
                       child: Image.asset("assets/icons/social_media/github.png",
                           height: 40, width: 40, color: CustomColors.WHITE)),
                   SizedBox(width: CustomSizes.WEB_SPACE_BETWEEN_ITEMS / 2),

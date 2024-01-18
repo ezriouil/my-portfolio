@@ -24,15 +24,15 @@ class ThemeApp{
       checkboxTheme: CustomCheckboxTheme.lightCheckboxTheme);
 
   /// Dark Theme
-  static ThemeData darkTheme = ThemeData(
-      useMaterial3: true,
-      brightness: Brightness.dark,
-      scaffoldBackgroundColor: CustomColors.BLACK,
-      primaryColor: CustomColors.PRIMARY,
-      elevatedButtonTheme: CustomElevatedButtonTheme.darkElevatedButtonTheme,
-      outlinedButtonTheme: CustomOutlinedButtonTheme.darkOutlinedButtonTheme,
-      appBarTheme: CustomAppBarTheme.darkAppBarTheme,
-      inputDecorationTheme: CustomInputTheme.darkInputTheme,
-      textTheme: CustomTextTheme.darkTextTheme,
-      checkboxTheme: CustomCheckboxTheme.darkCheckboxTheme);
+  // static ThemeData darkTheme = ThemeData(
+  //     useMaterial3: true,
+  //     brightness: Brightness.dark,
+  //     scaffoldBackgroundColor: CustomColors.BLACK,
+  //     primaryColor: CustomColors.PRIMARY,
+  //     elevatedButtonTheme: CustomElevatedButtonTheme.darkElevatedButtonTheme,
+  //     outlinedButtonTheme: CustomOutlinedButtonTheme.darkOutlinedButtonTheme,
+  //     appBarTheme: CustomAppBarTheme.darkAppBarTheme,
+  //     inputDecorationTheme: CustomInputTheme.darkInputTheme,
+  //     textTheme: CustomTextTheme.darkTextTheme,
+  //     checkboxTheme: CustomCheckboxTheme.darkCheckboxTheme);
 }

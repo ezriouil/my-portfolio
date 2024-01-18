@@ -1,6 +1,0 @@
-class CustomImageStrings{
-  CustomImageStrings._();
-
-
-
-}

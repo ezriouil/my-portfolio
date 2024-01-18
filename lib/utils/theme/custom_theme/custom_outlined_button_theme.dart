@@ -20,17 +20,17 @@ class CustomOutlinedButtonTheme {
                   borderRadius: BorderRadius.circular(16))));
 
   /// Outlined Button Dark Theme
-  static final OutlinedButtonThemeData darkOutlinedButtonTheme =
-      OutlinedButtonThemeData(
-          style: OutlinedButton.styleFrom(
-              elevation: 0,
-              foregroundColor: CustomColors.WHITE,
-              side: const BorderSide(color: CustomColors.WHITE),
-              textStyle: const TextStyle(
-                  fontSize: 16.0,
-                  color: CustomColors.WHITE,
-                  fontWeight: FontWeight.w600),
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16))));
+  // static final OutlinedButtonThemeData darkOutlinedButtonTheme =
+  //     OutlinedButtonThemeData(
+  //         style: OutlinedButton.styleFrom(
+  //             elevation: 0,
+  //             foregroundColor: CustomColors.WHITE,
+  //             side: const BorderSide(color: CustomColors.WHITE),
+  //             textStyle: const TextStyle(
+  //                 fontSize: 16.0,
+  //                 color: CustomColors.WHITE,
+  //                 fontWeight: FontWeight.w600),
+  //             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+  //             shape: RoundedRectangleBorder(
+  //                 borderRadius: BorderRadius.circular(16))));
 }

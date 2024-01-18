@@ -28,24 +28,24 @@ class CustomAppBarTheme {
           color: CustomColors.BLACK));
 
   /// App Bar For Dark Theme
-  static AppBarTheme darkAppBarTheme = const AppBarTheme(
-      elevation: 0,
-      centerTitle: true,
-      scrolledUnderElevation: 0.0,
-      backgroundColor: CustomColors.TRANSPARENT,
-      surfaceTintColor: CustomColors.TRANSPARENT,
-      iconTheme: IconThemeData(color: CustomColors.WHITE, size: 24),
-      actionsIconTheme: IconThemeData(color: CustomColors.WHITE, size: 24),
-      systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: CustomColors.BLACK,
-          statusBarIconBrightness: Brightness.light,
-          statusBarBrightness: Brightness.light,
-          systemNavigationBarColor: CustomColors.BLACK,
-          systemNavigationBarIconBrightness: Brightness.light,
-          systemNavigationBarDividerColor: CustomColors.BLACK
-      ),
-      titleTextStyle: TextStyle(
-          fontSize: 18.0,
-          fontWeight: FontWeight.w600,
-          color: CustomColors.WHITE));
+  // static AppBarTheme darkAppBarTheme = const AppBarTheme(
+  //     elevation: 0,
+  //     centerTitle: true,
+  //     scrolledUnderElevation: 0.0,
+  //     backgroundColor: CustomColors.TRANSPARENT,
+  //     surfaceTintColor: CustomColors.TRANSPARENT,
+  //     iconTheme: IconThemeData(color: CustomColors.WHITE, size: 24),
+  //     actionsIconTheme: IconThemeData(color: CustomColors.WHITE, size: 24),
+  //     systemOverlayStyle: SystemUiOverlayStyle(
+  //         statusBarColor: CustomColors.BLACK,
+  //         statusBarIconBrightness: Brightness.light,
+  //         statusBarBrightness: Brightness.light,
+  //         systemNavigationBarColor: CustomColors.BLACK,
+  //         systemNavigationBarIconBrightness: Brightness.light,
+  //         systemNavigationBarDividerColor: CustomColors.BLACK
+  //     ),
+  //     titleTextStyle: TextStyle(
+  //         fontSize: 18.0,
+  //         fontWeight: FontWeight.w600,
+  //         color: CustomColors.WHITE));
 }

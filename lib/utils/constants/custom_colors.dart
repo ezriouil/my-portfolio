@@ -24,7 +24,5 @@ class CustomColors{
   static const BLUE= Color(0xE22091FF);
   static const DARK_BLUE= Color(0xFF0052FF);
 
-  static const SECONDARY_LIGHT= Colors.redAccent;
-  static const SECONDARY_DARK= Colors.redAccent;
 
 }

@@ -23,20 +23,20 @@ class CustomCheckboxTheme {
       }));
 
   /// Checkbox For Dark Theme
-  static final CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4.0)),
-      checkColor: MaterialStateProperty.resolveWith((states) {
-        if (states.contains(MaterialState.selected)) {
-          return CustomColors.BLACK;
-        } else {
-          return CustomColors.WHITE;
-        }
-      }),
-      fillColor: MaterialStateProperty.resolveWith((states) {
-        if (states.contains(MaterialState.selected)) {
-          return CustomColors.PRIMARY_1;
-        } else {
-          return CustomColors.TRANSPARENT;
-        }
-      }));
+  // static final CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
+  //     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4.0)),
+  //     checkColor: MaterialStateProperty.resolveWith((states) {
+  //       if (states.contains(MaterialState.selected)) {
+  //         return CustomColors.BLACK;
+  //       } else {
+  //         return CustomColors.WHITE;
+  //       }
+  //     }),
+  //     fillColor: MaterialStateProperty.resolveWith((states) {
+  //       if (states.contains(MaterialState.selected)) {
+  //         return CustomColors.PRIMARY_1;
+  //       } else {
+  //         return CustomColors.TRANSPARENT;
+  //       }
+  //     }));
 }

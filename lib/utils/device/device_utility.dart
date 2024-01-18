@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class DeviceUtility {
   DeviceUtility._();
@@ -25,8 +24,6 @@ class DeviceUtility {
   static double getDeviceWidth(BuildContext context) =>
       MediaQuery.of(context).size.width;
 
-  static bool isMobile(BuildContext context) => context.isPhone;
-  static bool isTablet(BuildContext context) => context.isTablet;
 
   /// PLATFORM TYPES
   static bool isAndroid() => Platform.isAndroid;
