@@ -1,16 +1,9 @@
 # portfolio
 
-A new Flutter project.
+<img width="1680" alt="thumbanil" src="https://github.com/ezriouil/my-portfolio/assets/130238246/4dac413e-8e88-4885-92ec-2acd87b6eab7">
 
-## Getting Started
+<img width="1680" alt="Untitled 2" src="https://github.com/ezriouil/my-portfolio/assets/130238246/98f1dc67-dda3-448e-a775-d5924a9c2bbe">
 
-This project is a starting point for a Flutter application.
+<img width="1680" alt="Untitled 3" src="https://github.com/ezriouil/my-portfolio/assets/130238246/ff0e0571-c71b-42d9-a1b1-3daf78b7be60">
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="1680" alt="Untitled" src="https://github.com/ezriouil/my-portfolio/assets/130238246/17521d46-75f9-480d-a1fa-b3689e93a036">
